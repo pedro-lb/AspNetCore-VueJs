@@ -1,0 +1,18 @@
+﻿<div id="app">
+    <div class="container">
+        <vs-button vs-type="filled" v-on:click="HelloWorld">Hello World</vs-button>
+    </div>
+</div>
+
+@section Scripts  {
+    <script>
+        new Vue({
+            el: '#app',
+            methods: {
+                HelloWorld() {
+                    alert('Hello World!');
+                }
+            }
+        });
+    </script>
+}
