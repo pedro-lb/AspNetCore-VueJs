@@ -17,11 +17,17 @@
     @RenderSection("Styles", required: false)
 </head>
 <body>
-    <div id="app">
-        <main role="main">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main">
+        <div id="app">
+            <div class="theme-container">
+                <div class="page">
+                    <div class="content content-pagex">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <environment include="Development">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -36,7 +42,6 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
-
     <script src="~/js/site.js" asp-append-version="true"></script>
 </body>
 </html>
